@@ -2699,7 +2699,7 @@ int ctx_connect(struct pingpong_context *ctx,
 
 			//- Fall back to SW Limit only if flag undefined
 			if(err ||
-			   qp_static_rate != user_param->valid_hw_rate_limit_index ||
+			   // qp_static_rate != user_param->valid_hw_rate_limit_index ||
 			   user_param->link_type != IBV_LINK_LAYER_INFINIBAND) {
 				if(!user_param->is_rate_limit_type) {
 					user_param->rate_limit_type = SW_RATE_LIMIT;
